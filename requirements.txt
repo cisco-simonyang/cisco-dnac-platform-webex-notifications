@@ -3,3 +3,4 @@ requests
 webexteamssdk
 argparse
 pyOpenSSL
+python-dotenv==0.14.0
