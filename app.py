@@ -28,7 +28,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def mainPage():
     if request.method == 'GET':
-        return("cisco-dnac-platform-webex-notifications version %s -> by Robert Csapo (robert@nigma.org)" % version)
+        return("cisco-dnac-platform-webex-notifications version %s, using token %s and room id %s" % (os.environ["WEBEX_TEAMS_ACCESS_TOKEN"], os.environ["WEBEX_TEAMS_ROOM_ID"]))
     elif request.method == 'POST':
         return("cisco-dnac-platform-webex-notifications healthcheck")
 
