@@ -4,3 +4,5 @@ webexteamssdk
 argparse
 pyOpenSSL
 python-dotenv==0.14.0
+gunicorn==19.10.0
+
