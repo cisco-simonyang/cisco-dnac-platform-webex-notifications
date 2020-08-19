@@ -13,8 +13,8 @@ print(os.environ)
 if "WEBEX_TEAMS_ACCESS_TOKEN" not in os.environ:
     webexAPI = WebexTeamsAPI(access_token='CHANGEME')
 else:
-    webexAPI = WebexTeamsAPI(access_token=os.environ['WEBEX_TEAMS_ACCESS_TOKEN'])
-    #webexAPI = WebexTeamsAPI()
+    #webexAPI = WebexTeamsAPI(access_token=os.environ['WEBEX_TEAMS_ACCESS_TOKEN'])
+    webexAPI = WebexTeamsAPI()
 
 if "WEBEX_TEAMS_ROOM_ID" not in os.environ:
     os.environ["WEBEX_TEAMS_ROOM_ID"] = "CHANGEME"
